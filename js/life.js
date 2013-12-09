@@ -81,6 +81,18 @@ var step = function() {
 
 };
 
+var steps = function() {
+  var i;
+  var target = $( '#input' ).val();
+  if (isNaN(target) || target === '' || target%1 !== 0) {
+    alert("please enter an integer value.");
+  } else {
+    for (i = 0; i <= target; i++) {
+      setTimeout(function() { step() },300);
+    }
+  }
+};
+
 /* 
   we must solve the problem that results from updating our boxes in the middle
   of an evaluation step. need to cache results, then implement them at the end.
@@ -122,7 +134,7 @@ $(document).ready( function () {
   });
 
   $( '#step' ).click( function() {
-    step();
+    steps();
   });
 
 });

@@ -17,6 +17,13 @@ h1 {
   margin-top:25;
 }
 
+input {
+  font-family: Veranda, Geneva, sans-serif;
+  font-size:16;
+  text-align:center;
+  width:50px;
+}
+
 #grid {
   width:400px;
   height:400px;
@@ -37,14 +44,36 @@ h1 {
 }
   
 #step {
+  font-family: Veranda, Geneva, sans-serif;
+  font-size:14;
   width: 100px;
-  margin:0 auto;
-  margin-top:10px;
-  display:block;
-  background-color:#eee;
+  background-color:#d4e3e5;
   color:#000;
 }
+#step:hover {
+  background-color:#fffacd;
+}
+
+.credit {
+  position:bottom;
+  margin-bottom:20px;
+  margin-left:auto;
+  margin-right:auto;
+  color:rgb(170,170,170);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:12;
+  text-align:center;
+}
   
+.form {
+  margin-bottom:20px;
+  margin-left:auto;
+  margin-right:auto;
+  color:#000;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:16;
+  text-align:center;
+}
     
   
 
