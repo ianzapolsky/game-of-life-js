@@ -110,7 +110,7 @@ var life = (function () {
     
   };
 
-  // DOM manipulation methods
+  // Grid methods
   initGrid = function () {
     var 
       x, y, id, tag, 
@@ -129,7 +129,7 @@ var life = (function () {
     born.html('0');
   };
 
-  // timer methods
+  // Timer methods
   start = function () {
     timer = setInterval(step, 200);
   };
