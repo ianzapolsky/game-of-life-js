@@ -9,7 +9,7 @@ var life = (function () {
     year,
     dead,
     born,
-    timer,
+    timer = null,
 
   init, 
   initCells, getCell, setCell, countAdj,
@@ -131,11 +131,13 @@ var life = (function () {
 
   // Timer methods
   start = function () {
-    timer = setInterval(step, 200);
+    if (timer == null) 
+      timer = setInterval(step, 200);
   };
 
   stop = function () {
     clearInterval(timer);
+    timer = null;
   };
     
   // init method
