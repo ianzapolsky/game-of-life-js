@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <title>John Conway's Game of Life</title>
+
+  <link rel="stylesheet" type="text/css" href="css/life.css">
+
+  <script type="text/javascript" src=
+    "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+
+  <script type="text/javascript" src="js/life.js"></script>
+
+  <script>
+    $(document).ready(function () { life.init(40, $('#grid')); });
+  </script>
+</head>
+
+<body>
+  <h3># years</h3><p id="year"></p></h3>
+  <h3># cells dead</h3><p id="dead"></p></h3>
+  <h3># cells born</h3><p id="born"></p></h3>
+
+  <div id="grid"></div>
+
+  <button id="start">start</button>
+  <button id="stop">stop</button>
+
+</body>
+
+</html>
+
+
